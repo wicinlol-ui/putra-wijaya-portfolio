@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Putra Wijaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <h1 class="logo">Putra Wijaya</h1>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="home" class="hero">
+    <img src="c:\Users\Wui_c\Downloads\fotojpg.jpeg" alt="foto profil" class="profile">
+    <h2>Halo, Saya Putra Wijaya 😎</h2>
+    <p>Berasal dari: Sungai Pakning, Riau</p>
+  </section>
+
+  <!-- Tentang -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya mahasiswa yang sedang belajar web development dasar. Minat saya di coding, desain minimalis, dan branding kreatif.</p>
+  </section>
+
+  <!-- Skill -->
+  <section id="skills">
+    <h2>Skill</h2>
+    <ul>
+      <li>HTML & CSS dasar</li>
+      <li>Bootstrap</li>
+      <li>Editing gambar sederhana</li>
+      <li>Belajar memasak</li>
+      <li>Bisa masak telor 🍳</li>
+      <li>Memanfaatkan AI sebagai alat bantu pintar 🤖</li>
+    </ul>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:wicinlol@gmail.com">wicinlol@gmail.com</a></p>
+    <p>WhatsApp: <a href="tel:082172196668">082172196668</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Putra Wijaya. All rights reserved.</p>
+  </footer>
+
+  <!-- Animasi Scroll -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100) {
+          sec.classList.add("show");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
